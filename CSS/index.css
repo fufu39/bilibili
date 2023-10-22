@@ -1,0 +1,602 @@
+/* 头部区域 */
+.header{
+    width: 100%;
+    min-width: 1060px;
+    height: 159px;
+    /* background-color: pink; */
+    background-image: url(../uploads/banner.webp);
+    background-size: 100% 100%;
+    /* background-position: -55px -20px; */
+}
+
+/* 头部导航区域 */
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 64px;
+}
+
+/* 左 */
+.nav ul,
+.nav .search{
+    display: flex;
+    line-height: 64px;
+}
+
+.nav li a{
+    margin-right: 15px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 微软雅黑;
+}
+
+.nav li .bilifont{
+    margin-right: 3px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* 中 */
+.search{
+    position: relative;
+    padding-right: 48px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    /* margin-right: 45px; */
+    width: 550px;
+    height: 40px;
+    /* border-bottom: 2px solid #f4f4f4; */
+}
+/* 设置外边距（懒得合在一起就分开写了~），搜索区域宽高 */
+
+.search .bilifont{
+    position: absolute;
+    right: 52px;
+    margin: 0 8px;
+    font-size: 20px;
+    color: #2c2b2b;
+    line-height: 40px;
+}
+
+
+.search input{
+    /* 浏览器优先生效input标签的默认宽度,所以flex:1不生效 */
+    /* 解决:重置input默认宽度,width:0 */
+    flex: 1;
+    width: 0;
+    background-color: #dddfe0;
+    border-radius: 8px;
+
+    text-indent: 15px;
+}
+
+
+.search input::placeholder{
+    /* padding-left: 14px; */
+    font-size: 13px;
+    color: #6b6a6a;
+}
+
+/* 右 */
+.user{
+    display: flex;;
+    align-items: center;
+}
+
+.user img{
+    /* margin-right: 10px; */
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.post{
+    margin: auto 0;
+    text-align: center;
+    width: 90px;
+    height: 34px;
+    background-color: #fb7299;
+    border-radius: 6px;
+}
+
+.post a{
+    line-height: 34px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.post a svg{
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+/* logo区域 */
+
+.logo a{
+    background-image: url(../images/logo.png);
+    /* font-size: 0; */
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 63px;
+    width: 162px;
+    height: 78px;
+    /* background-color: blue; */
+}
+
+.logo a{
+    display: block;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    line-height: 78px;
+    font-size: 0;
+}
+
+/* 右侧区域 */
+.right{
+    display: flex;
+}
+
+
+.right li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+.right li span{
+    line-height: 17px;
+}
+
+
+/* 频道区域 */
+.channel{
+    height: 110px;
+    padding: 0 140px;
+    display: flex;
+    align-items: center;
+    /* background-color: skyblue; */
+}
+
+/* 左侧 */
+.channel .left{
+    display: flex;
+}
+
+.channel .left a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.channel .left .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.channel .left svg{
+    width: 25px;
+    height: 25px;
+}
+
+.channel .left .dynamic{
+    background-color:  #ff9212;
+}
+
+.channel .left .hot{
+    background-color: #f07775;
+}
+
+.channel .left span{
+    text-align: center;
+    font-size: 14px;
+    color: #18191c;
+}
+
+/* 中间 */
+.channel .center{
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.channel .center ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.channel .center li{
+    margin-bottom: 6px;
+    margin-right: 6px;
+    width: 81px;
+    height: 27px;
+    text-align: center;
+    background-color: #f5f6f7;
+    border: 1px solid #f1f2f3;
+    border-radius: 6px;
+}
+
+.channel .center li a{
+    font-size: 14px;
+    color: #61666d;
+    letter-spacing: 2px;
+}
+
+/* 右侧 */
+.channel .right{
+    width: 360px;
+    border-left: 1px solid #e2e5e7;
+}
+
+.channel .right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.channel .right li{
+    height: 30px;
+    line-height: 30px;
+}
+
+.channel .right li a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 28px;
+    padding-bottom: 42px;
+}
+
+.channel .right li svg{
+    width: 20px;
+    height: 20px;
+    /* margin-right: 4px; */
+    color: #9ea5af;
+}
+
+.channel .right li span{
+    font-size: 14px;
+    color: #61666d;
+    margin-left: 1px;
+}
+
+
+/* 推荐区域 */
+.recommend{
+    width: 100%;
+    padding: 0 140px;
+}
+
+.recommend .center{
+    display: flex;
+}
+
+/* 轮播图区域 */
+.recommend .center .screen{
+    position: relative;
+    width: 550px;
+    height: 468px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+
+.recommend .center .screen img{
+    border-radius: 6px;
+    width: 100%;
+    height: 310px;
+}
+
+.gradual{
+    width: 100%;
+    height: 393px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(0, #524c46 22%, transparent 35%);
+    border-radius: 6px;
+}
+
+.recommend .center .screen .info{   
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 94px;
+    padding: 0 15px;
+    /* background-color: pink; */
+}
+
+.recommend .center .screen .info a{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.recommend .center .screen .info ul{
+    display: flex;
+}
+
+.recommend .center .screen .info li{
+    margin: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff6;
+    cursor: pointer;
+}
+
+.recommend .center .screen .info li:nth-child(8){
+    width: 14px;
+    height: 14px;
+    margin: 1px;
+    background-color: #fff;
+}
+
+.recommend .center .screen .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.recommend .center .screen .buttons button{
+    margin-right: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff1a;
+    border: 1px solid #ffffff1a;
+}
+
+.recommend .center .screen .buttons button:last-child{
+    margin-right: 0;
+}
+
+.recommend .center .screen .buttons button svg{
+    width: 12px;
+    height: 12px;
+    color: #fff;
+}
+
+
+/* box盒子区域 */
+.recommend .box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommend .center .box{
+    justify-content: space-between;
+    width: 835px;
+    height: 468px;
+    
+}
+
+.recommend .video{
+    width: 265px;
+    height: 224px;
+    margin-bottom: 20px;
+}
+
+.recommend .box .video .pic{
+    position: relative;
+    /* border: 1px solid #000; */
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.recommend .box .video .pic img{
+    width: 265px;
+    height: 149px;
+    border-radius: 6px;
+}
+
+.recommend .box .video .surface{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px 8px 6px;
+    width: 100%;
+    height: 38px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+    color: #fff;
+    font-size: 13px;
+}
+
+.recommend .box .video .surface .left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.recommend .box .video .surface .left svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+.recommend .box .video .surface .left .blank{
+    margin-left: 12px;
+}
+
+.box .title{
+    width: 100%;
+    height: 44px;
+}
+
+.box h3{
+    margin-top: 10px;
+    padding-right: 16px;
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.up{
+    margin-top: 4px;
+    display: flex;
+    font-size: 13px;
+}
+
+.up a{
+    color: #9499a0;
+    display: flex;
+    align-items: center;
+}
+
+.up svg{
+    width: 17px;
+    height: 17px;
+    margin: 2px;
+}
+
+.up .dot{
+    margin: 0 6px;
+}
+
+
+/* 底部区域 */
+.recommend .footer .box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 补上悬停变色(前面忘了) */
+.box .video .title h3:hover a{
+    color: #00aeec;
+}
+
+.box .video .up a:hover span{
+    color: #00aeec;
+}
+
+.box .video .up a:hover svg{
+    color: #00aeec;
+}
+
+
+/* 换一换侧边栏区域 */
+.three{
+    position: relative;
+}
+
+.change{
+    position: absolute;
+    right: -50px;
+    top: 0;
+    width: 40px;
+    height: 83px;
+    background-color: #fff;
+    /* border: 1px solid #bbc1c9; */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 2px #e0e2e7; 
+    cursor: pointer;
+}
+
+.change .bilifont{
+    font-size: 18px;
+    color: #18191c;
+}
+
+.change .text {
+    writing-mode: vertical-lr;
+    color: #18191c;
+    margin: 11px auto;
+}
+
+.change .text .word{
+    font-size: 12px;
+}
+
+
+/* 右下角侧边栏区域 */
+.sidenav{
+    position: fixed;
+    right: 90px;
+    bottom: 28px;
+}
+
+.sidenav .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 6px 0 4px;
+    width: 40px;
+    /* background-color: #fff; */
+    /* height: 40px; */
+    /* background-color: pink; */
+    border: 1px solid #e3e5e7;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.sidenav .button .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav .button a{
+    color: #18191c;
+}
+
+.sidenav .button .top svg{
+    width: 14px;
+    height: 14px;
+}
+
+.sidenav .refresh {
+    background-color: #00aeec;
+}
+
+.sidenav .refresh a svg{
+    color: #fff;
+}
+
+
+/* 返回顶部丝滑效果 */
+*{
+    scroll-behavior: smooth;
+}
+
+/* 调整footer里的margin */
+.footer .box .video{
+    margin-top: 20px;
+    margin-bottom: 25px ;
+}
